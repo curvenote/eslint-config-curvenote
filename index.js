@@ -15,6 +15,10 @@ module.exports = {
     'react/jsx-key': 'off',
     'import/no-duplicates': 'error',
     'import/no-unresolved': 'off', // This errors out on '~/module' that is defined in tsconfig
+    'import/no-extraneous-dependencies': [
+      'error',
+      { devDependencies: false, optionalDependencies: false, peerDependencies: true },
+    ],
     '@typescript-eslint/no-shadow': 'error',
     '@typescript-eslint/consistent-type-imports': 'error',
     'array-callback-return': [
